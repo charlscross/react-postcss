@@ -1,13 +1,11 @@
-'use strict'
-
 module.exports = {
     plugins: [
         require('postcss-mixins'),
         require('postcss-nested'),
         require('postcss-functions'),
+        require('postcss-modules-values'),
         require('postcss-calc'),
         require('autoprefixer')({
-            // @see {@link https://confluence.tomtomgroup.com/display/TTB/Atlantis%3A+Catalog+of+Specifications#Atlantis:CatalogofSpecifications-BrowserandDevices}
             browsers: [
                 'last 2 Chrome versions',
                 'last 2 Firefox versions',

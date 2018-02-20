@@ -2,7 +2,7 @@ var webpack = require('webpack');
 var path = require('path');
 var CopyWebpackPlugin = require('copy-webpack-plugin')
 
-var parentDir = path.join(__dirname, '../');
+var parentDir = path.join(__dirname, './');
 
 module.exports = {
     entry: [
@@ -28,14 +28,7 @@ module.exports = {
                             localIdentName: '[name]--[local]--[hash:base64:5]'
                         }
                     },
-                    {
-                        loader: 'postcss-loader',
-                        options: {
-                            config: {
-                                path: parentDir + '/postcss.config.js'
-                            }
-                        }
-                    }
+                    'postcss-loader'
                 ]
             }
         ]

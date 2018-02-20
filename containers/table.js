@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import {setTabledata} from '../actions/tabledata';
 import {setLastItem} from '../actions/lastitem';
 import {Link} from 'react-router-dom';
+import styles from '../styles/main.css';
 
 class Table extends React.Component {
 
@@ -59,7 +60,7 @@ class Table extends React.Component {
 		return (
 			<div>
 				<div style={this.testCss.navBar}>
-					<h1>Hleel</h1>
+					<h1 className={styles['intro']}>Hleel</h1>
 				</div>
 				<div style={this.testCss.main}>
 					<Link to='/'>
